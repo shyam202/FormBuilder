@@ -1,0 +1,148 @@
+
+:root {
+  --primary-color: #4BC676;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+
+
+.Form{
+    /* display: grid; */
+    color:#4BC676;
+    font-family: sans-serif;
+    text-align: center;
+    background-color:#ffffff;
+    width:100%;   
+    float: left;
+    font-size:medium;   
+    background-image: url(../bgr-pattern.png);
+    margin-top: 25px;
+
+  }
+
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block {
+    
+    color: #ffffff;
+    border: #ccc solid 2px;
+    font-size:x-large;
+    background-color: #06c432;
+    
+    
+  }
+
+
+  .btn-primary,
+  .bg-primary,
+  .badge-primary,
+  .alert-primary {
+    background: var(--primary-color);
+    color: #ffffff;
+    border: #fff solid 2px;
+
+    
+  }
+
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block :after,
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block:before {
+      letter-spacing: 1px;
+  }
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block :after,
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block:before{
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+  }
+
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block :after,
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  margin-left: 30%;
+}
+
+  .btn-block,
+  .bg-block,
+  .badge-block,
+  .alert-block:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+  margin-left: 30%;
+}
+
+  
+  /* .bg-light,
+  .badge-light {
+    border: #ccc solid 1px;
+  }
+  */
+
+  
+  .Main {
+    text-align: center;
+    background-color: #000000;
+    margin-top: -5.3%;
+    height: 50vh;
+ }
+
+ h5{
+  color:#4BC676;
+  font-size: x-large;
+  font-weight: 1000;
+  padding-top: 10px;
+  }
+
+
+
+   .form-control{
+    margin-left: 6rem;
+    width:85%;
+    
+  }
+
+   .form-label{
+    margin-left:3rem;
+   }
+
+
+   @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .form-label{
+      margin-left:3rem;
+     }
+}
